@@ -12,11 +12,30 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(71, 71, 71);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(71, 71, 71);
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         td, th {
@@ -32,16 +51,19 @@
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da Pop. Total</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 150px;">População</th>
+                <th scope="col" style="width: 150px;">% da Pop. Total</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>São Paulpo</td>
+                <td>São Paulo</td>
                 <td class="num">44 411 238</td>
                 <td class="num">21,88%</td>
             </tr>
@@ -96,7 +118,7 @@
                 <td class="num">3,47%</td>
             </tr>
             <tr>
-                <td>Maranhã</td>
+                <td>Maranhão</td>
                 <td class="num">6 775 805</td>
                 <td class="num">3,34%</td>
             </tr>
@@ -111,7 +133,7 @@
                 <td class="num">1,94%</td>
             </tr>
             <tr>
-                <td>Espirito Snato</td>
+                <td>Espirito Santo</td>
                 <td class="num">3 833 712</td>
                 <td class="num">1,89%</td>
             </tr>
@@ -178,11 +200,22 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>203 062 512</strong>	</td>
                 <td class="num">100%</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus corrupti, fugiat perspiciatis quos alias mollitia laborum magnam doloribus saepe quis reprehenderit, culpa nemo nihil provident commodi, est iure numquam hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quisquam saepe similique minima consequuntur. Ipsum nulla harum voluptatem fuga reprehenderit. Voluptatem, beatae fuga commodi fugiat praesentium repellat quas omnis molestiae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, numquam praesentium magni voluptatum rerum maiores delectus consequuntur ut recusandae aliquam vel voluptates, veniam aspernatur nisi error quibusdam asperiores dolorem totam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui veniam odio, facilis officia quae velit et repellat enim voluptatum dolorem sint dolores, dignissimos quas! Ullam, blanditiis provident. Asperiores, dolorem. Maxime?</p> 
+     
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus corrupti, fugiat perspiciatis quos alias mollitia laborum magnam doloribus saepe quis reprehenderit, culpa nemo nihil provident commodi, est iure numquam hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quisquam saepe similique minima consequuntur. Ipsum nulla harum voluptatem fuga reprehenderit. Voluptatem, beatae fuga commodi fugiat praesentium repellat quas omnis molestiae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, numquam praesentium magni voluptatum rerum maiores delectus consequuntur ut recusandae aliquam vel voluptates, veniam aspernatur nisi error quibusdam asperiores dolorem totam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui veniam odio, facilis officia quae velit et repellat enim voluptatum dolorem sint dolores, dignissimos quas! Ullam, blanditiis provident. Asperiores, dolorem. Maxime?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus corrupti, fugiat perspiciatis quos alias mollitia laborum magnam doloribus saepe quis reprehenderit, culpa nemo nihil provident commodi, est iure numquam hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quisquam saepe similique minima consequuntur. Ipsum nulla harum voluptatem fuga reprehenderit. Voluptatem, beatae fuga commodi fugiat praesentium repellat quas omnis molestiae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, numquam praesentium magni voluptatum rerum maiores delectus consequuntur ut recusandae aliquam vel voluptates, veniam aspernatur nisi error quibusdam asperiores dolorem totam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui veniam odio, facilis officia quae velit et repellat enim voluptatum dolorem sint dolores, dignissimos quas! Ullam, blanditiis provident. Asperiores, dolorem. Maxime?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus corrupti, fugiat perspiciatis quos alias mollitia laborum magnam doloribus saepe quis reprehenderit, culpa nemo nihil provident commodi, est iure numquam hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quisquam saepe similique minima consequuntur. Ipsum nulla harum voluptatem fuga reprehenderit. Voluptatem, beatae fuga commodi fugiat praesentium repellat quas omnis molestiae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, numquam praesentium magni voluptatum rerum maiores delectus consequuntur ut recusandae aliquam vel voluptates, veniam aspernatur nisi error quibusdam asperiores dolorem totam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui veniam odio, facilis officia quae velit et repellat enim voluptatum dolorem sint dolores, dignissimos quas! Ullam, blanditiis provident. Asperiores, dolorem. Maxime?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus corrupti, fugiat perspiciatis quos alias mollitia laborum magnam doloribus saepe quis reprehenderit, culpa nemo nihil provident commodi, est iure numquam hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quisquam saepe similique minima consequuntur. Ipsum nulla harum voluptatem fuga reprehenderit. Voluptatem, beatae fuga commodi fugiat praesentium repellat quas omnis molestiae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, numquam praesentium magni voluptatum rerum maiores delectus consequuntur ut recusandae aliquam vel voluptates, veniam aspernatur nisi error quibusdam asperiores dolorem totam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui veniam odio, facilis officia quae velit et repellat enim voluptatum dolorem sint dolores, dignissimos quas! Ullam, blanditiis provident. Asperiores, dolorem. Maxime?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus corrupti, fugiat perspiciatis quos alias mollitia laborum magnam doloribus saepe quis reprehenderit, culpa nemo nihil provident commodi, est iure numquam hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quisquam saepe similique minima consequuntur. Ipsum nulla harum voluptatem fuga reprehenderit. Voluptatem, beatae fuga commodi fugiat praesentium repellat quas omnis molestiae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, numquam praesentium magni voluptatum rerum maiores delectus consequuntur ut recusandae aliquam vel voluptates, veniam aspernatur nisi error quibusdam asperiores dolorem totam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui veniam odio, facilis officia quae velit et repellat enim voluptatum dolorem sint dolores, dignissimos quas! Ullam, blanditiis provident. Asperiores, dolorem. Maxime?</p>
 </body>
 </html>
